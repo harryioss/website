@@ -12,10 +12,10 @@ My Website
 Website Devloper, iOS Developer
 
 ### Twitter
-[Harryioss](https://twitter.com/harryioss) <br/>
+[harryioss](https://twitter.com/harryioss) <br/>
 
 ### Discord Server
-[Join :)](https://discord.gg/vG23fCF) <br/>
+[Join](https://discord.gg/vG23fCF) <br/>
 
 ### My Website
 Helpers
