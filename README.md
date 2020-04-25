@@ -17,7 +17,6 @@ Website Devloper, iOS Developer
 ### Discord Server
 [Join](https://discord.gg/vG23fCF) <br/>
 
-### My Website
-Helpers
+### Helpers
 - [Cryptic](https://twitter.com/cr4ptic)
 <br/>
