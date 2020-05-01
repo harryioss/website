@@ -368,7 +368,7 @@ a.twitter:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #444;
+  background: rgb(234, 255, 48);
   color: #fff;
   width: 44px;
   height: 44px;
