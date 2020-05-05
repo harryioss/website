@@ -1,0 +1,960 @@
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background-color: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    color: #2B839F
+}
+
+html {
+    background: #fff;
+    min-height: 100%;
+    position: relative
+}
+
+body {
+    font-family: "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+    background: #f3f3f3;
+    min-height: 100%;
+    color: #333
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 0 40px;
+    width: 100%;
+    display: block
+}
+
+@media (max-width: 350px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+#content h1 {
+    margin-bottom: 15px
+}
+
+#content p {
+    line-height: 1.5
+}
+
+#content p.lead {
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 120%;
+    line-height: 1;
+    margin-bottom: 0;
+    color: #777
+}
+
+.left,
+.right {
+    float: left;
+    display: inline-block
+}
+
+.right {
+    float: right
+}
+
+.clear {
+    clear: both
+}
+
+.row {
+    display: flex
+}
+
+.row .fill {
+    flex-grow: 1
+}
+
+.row.align-center {
+    align-items: center
+}
+
+.row-reverse {
+    flex-direction: row-reverse
+}
+
+.navbtn {
+    background: rgb(151, 151, 151);
+    color: #fff !important;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    transition: background .25s ease-in-out, box-shadow .25s ease-in-out
+}
+
+.navbtn:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05)
+}
+
+.navbtn.download {
+    background:rgb(151, 151, 151);
+}
+
+.navbtn.download:hover {
+    background: rgb(151, 151, 151);
+}
+
+.navbtn.unclickable,
+.navbtn.disabled,
+.navbtn:disabled {
+    cursor: default;
+    background: #fff;
+    color: #c9c9c9 !important;
+    border: 1px solid #eee
+}
+
+a {
+    color: #9684F8;
+    text-decoration: inherit
+}
+
+a.link i {
+    font-size: 80%;
+    position: relative;
+    top: -1px
+}
+
+a:hover {
+    color: #88B7FF
+}
+
+.subhead {
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #999;
+    display: block
+}
+
+#cover {
+    color: #888;
+    line-height: 1.3;
+    padding: 60px 0;
+    min-height: 600px;
+    height: 90vh;
+    max-height: 700px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #fff url(https://ayden.dev/assets/img/header.png);
+    background-repeat: repeat-x;
+    background-size: 1000px 300px
+}
+
+#cover::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), #fff);
+    z-index: 0
+}
+
+#cover>div {
+    position: relative;
+    z-index: 1;
+    max-width: 750px
+}
+
+#cover h1,
+#cover p.lead {
+    font-family: "Menlo", "Fira Mono", monospace;
+    font-weight: normal;
+    color: #000;
+    margin-bottom: 16px
+}
+
+#cover p.lead {
+    color: #5e5e5e;
+    margin-top: 0px;
+    font-size: 1.4em;
+    margin-bottom: 24px
+}
+
+#cover .contact {
+    font-size: 0;
+    margin-bottom: -4px
+}
+
+#cover .contact>a {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    padding: 9px 12px;
+    border: 1px solid rgba(43, 131, 159, 0.1);
+    border-radius: 10px;
+    background: rgba(150, 132, 248, 0.08);
+    color: #2B839F;
+    font-size: 15px;
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    transition: 200ms ease-out background, 200ms ease-out border
+}
+
+#cover .contact>a:hover {
+    background: rgba(150, 132, 248, 0.12);
+    border-color: rgba(43, 131, 159, 0.15)
+}
+
+#cover .contact>a i {
+    font-size: 18px;
+    position: relative;
+    top: 1px
+}
+
+#cover .contact>a span {
+    margin-left: 8px;
+    position: relative;
+    top: -1px
+}
+
+@media (max-width: 500px) {
+    #cover .contact>a {
+        border: 1px solid rgba(43, 131, 159, 0.05)
+    }
+
+    #cover .contact>a span {
+        display: none
+    }
+}
+
+body:not(.layout-front) #cover {
+    padding: 32px 0;
+    min-height: 250px;
+    height: auto
+}
+
+@media (max-width: 350px) {
+    body:not(.layout-front) #cover {
+        padding: 20px 0
+    }
+}
+
+#front-content {
+    margin: 0 auto;
+    max-width: 950px;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.badge-row {
+    align-content: stretch
+}
+
+.badge-row .fill {
+    padding-bottom: 5px
+}
+
+.badge {
+    margin-top: -22px;
+    z-index: -1;
+    margin-left: 20px;
+    background: url(/assets/img/badge.png) no-repeat;
+    background-size: contain;
+    background-position: top center;
+    min-width: 150px;
+    max-width: 300px
+}
+
+.badge img {
+    display: none
+}
+
+@media (max-width: 600px) {
+    .badge-row {
+        display: block
+    }
+
+    .badge {
+        position: static;
+        margin: 0 auto;
+        margin-top: -22px;
+        display: block;
+        width: 90%;
+        background: none
+    }
+
+    .badge img {
+        display: block;
+        margin: 0 auto
+    }
+}
+
+.project {
+    min-height: 420px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px -2px rgba(43, 131, 159, 0.06), 0 0 20px -2px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.project>.fill {
+    align-self: stretch;
+    flex-grow: 1
+}
+
+.project>.img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.project>.img-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #f3f3f3
+}
+
+.project>.img-ctn>.nested-img {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 95%
+}
+
+.project>.img-ctn>.nested-img.top {
+    align-self: flex-start;
+    background-position-y: top
+}
+
+.project>.img-ctn>.nested-img.bottom {
+    align-self: flex-end;
+    background-position-y: bottom
+}
+
+.project>.infobox {
+    max-width: 324px;
+    padding: 36px 40px
+}
+
+.project>.infobox>.head {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.project>.infobox>.head>img {
+    flex-shrink: 0
+}
+
+.project>.infobox>.head>.text {
+    margin-left: 16px;
+    flex-grow: 1;
+    flex-shrink: 1
+}
+
+.project>.infobox>.head>.text>.tag {
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #999;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 14px
+}
+
+.project>.infobox>.head>.text>h1 {
+    color: initial;
+    font-size: 24px;
+    margin: 0 !important
+}
+
+.project>.infobox p:not(.lead) {
+    font-size: 14px;
+    color: #888
+}
+
+.project>.infobox .afterthought {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 8px;
+    display: block
+}
+
+.project.mini {
+    min-height: auto
+}
+
+.project.mini>.infobox {
+    max-width: none
+}
+
+@media (max-width: 700px) {
+    .project {
+        flex-direction: column;
+        min-height: auto
+    }
+
+    .project>.fill {
+        min-height: 150px;
+        height: 35vh;
+        max-height: 350px
+    }
+
+    .project>.infobox {
+        max-width: none;
+        padding: 32px
+    }
+
+    .project>.img-ctn {
+        border-right: none;
+        border-bottom: 1px solid #f3f3f3
+    }
+}
+
+.project.flip {
+    flex-direction: row-reverse
+}
+
+.project.flip>.img-ctn {
+    border-right: none;
+    border-left: 1px solid #f3f3f3
+}
+
+@media (max-width: 700px) {
+    .project.flip {
+        flex-direction: column
+    }
+
+    .project.flip>.img-ctn {
+        border-left: none
+    }
+}
+
+.mini-row {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: auto auto
+}
+
+@media (max-width: 700px) {
+    .mini-row {
+        display: block
+    }
+}
+
+.tiled-bg {
+    background-repeat: repeat !important;
+    background-position: center
+}
+
+.tiled-bg.bank-bg {
+    background-color: #ebfbff;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 20px !important
+}
+
+.tiled-bg.reilkp-bg {
+    background-color: #edfafc;
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2386bcc8' fill-opacity='0.08' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: 58px !important
+}
+
+.tiled-bg.pwrspc-bg {
+    background-color: #fff3ea;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23fbeee6' fill-opacity='1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 70px
+}
+
+#projects {
+    margin: 0 -20px
+}
+
+@media (max-width: 350px) {
+    #projects {
+        margin: 0
+    }
+}
+
+#projects>span {
+    display: block;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 40px
+}
+
+#projects>span.more {
+    margin-top: -24px;
+    font-size: 15px
+}
+
+.coming-soon {
+    margin: 0;
+    display: block;
+    color: #888;
+    text-align: center;
+    font-size: 17px
+}
+
+.article-previews>a {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.article-previews .article-preview {
+    background-color: #fff;
+    box-shadow: 0 3px 6px -2px rgba(43, 131, 159, 0.06), 0 0 20px -2px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden
+}
+
+.article-previews .article-preview .img {
+    height: 200px;
+    background: #eee center/cover no-repeat
+}
+
+.article-previews .article-preview .info {
+    padding: 20px;
+    white-space: nowrap;
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.article-previews .article-preview .info * {
+    overflow-x: hidden;
+    text-overflow: ellipsis
+}
+
+.article-previews .article-preview .info .date {
+    font-size: 8.5pt;
+    margin-bottom: 4px
+}
+
+.article-previews .article-preview .info .title {
+    display: block;
+    font-size: 12pt
+}
+
+@media (min-width: 830px) {
+    .article-previews {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr
+    }
+
+    .article-previews.full {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+#footer {
+    background: #fff;
+    color: #888;
+    line-height: 1.3;
+    position: relative;
+    font-size: 10pt
+}
+
+#footer>div {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Menlo", "Fira Mono", monospace
+}
+
+#footer>div>div {
+    flex-grow: 1
+}
+
+#footer>div>div:first-child {
+    text-align: left
+}
+
+#footer>div>div:last-child {
+    text-align: right
+}
+
+.navbtn .info {
+    background: #fff;
+    color: #fff
+}
+
+.btns {
+    vertical-align: middle
+}
+
+.iconbtn {
+    color: #666;
+    font-size: 21px;
+    margin-left: 8px;
+    position: relative;
+    top: 3px
+}
+
+.section hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    background: none
+}
+
+.post {
+    padding: 20px 0 32px
+}
+
+.post>article .subhead {
+    margin-top: 12px;
+    margin-bottom: -8px
+}
+
+.post>article>.content {
+    color: #454545
+}
+
+.post>article>.content img {
+    max-width: 100%
+}
+
+.post>article>.content p {
+    line-height: 2 !important
+}
+
+.post>article>.content figure {
+    text-align: center;
+    margin: 30px 0;
+    display: block
+}
+
+.post>article>.content figure>img {
+    border-radius: 6px
+}
+
+.post>article>.content figure>figcaption {
+    margin-top: 12px;
+    color: #777;
+    font-size: 10pt
+}
+
+.post hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 32px 0
+}
+
+.post .article-share>.buttons>a {
+    font-size: 16pt;
+    margin-right: 8px
+}
+
+.post .article-share>.buttons>a:hover {
+    opacity: 0.7
+}
+
+.post .article-share>.buttons>a.twitter-brand {
+    color: #1da1f2
+}
+
+.post .article-share>.buttons>a.reddit-brand {
+    color: #ff4500
+}
+
+.post .migrated-post-alert {
+    background: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    margin-bottom: 32px;
+    color: #555;
+    font-size: 15px
+}
+
+.harryioss-button {
+    color: #ffffff;
+    outline: none;
+    padding: 5px 10px;
+    background-color: #979797;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 650;
+    -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+}
+
+.buttons {
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.big-button {
+    margin: 10px;
+    -webkit-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -moz-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    -o-transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+    transition: all 300ms cubic-bezier(0.505, 0.005, 0.250, 1.000);
+}
+
+.big-button button {
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.big-button button:hover {
+    transform: scale(1.05);
+    opacity: 70%;
+}
