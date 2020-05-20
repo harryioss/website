@@ -231,23 +231,18 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: normal;
-    color: #2B839F
-}
 
 html {
-    background: #fff;
+    background: #;
     min-height: 100%;
     position: relative
 }
 
 body {
     font-family: "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
-    background: #f3f3f3;
+    background: #222222;
     min-height: 100%;
-    color: #333
+    color: #fff
 }
 
 .container {
@@ -531,7 +526,7 @@ body:not(.layout-front) #cover {
 
 .project {
     min-height: 420px;
-    background-color: #fff;
+    background-color: rgb(241, 241, 241);
     box-shadow: 0 3px 6px -2px rgba(43, 131, 159, 0.06), 0 0 20px -2px rgba(0, 0, 0, 0.03);
     border-radius: 12px;
     display: flex;
@@ -556,7 +551,7 @@ body:not(.layout-front) #cover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #f3f3f3
+    border-right: 1px solid #444
 }
 
 .project>.img-ctn>.nested-img {
@@ -600,7 +595,7 @@ body:not(.layout-front) #cover {
 
 .project>.infobox>.head>.text>.tag {
     font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    color: #999;
+    color: #444;
     margin-bottom: 6px;
     display: block;
     font-size: 14px
@@ -614,12 +609,12 @@ body:not(.layout-front) #cover {
 
 .project>.infobox p:not(.lead) {
     font-size: 14px;
-    color: #888
+    color: #444;
 }
 
 .project>.infobox .afterthought {
     font-size: 11px;
-    color: #aaa;
+    color: #444;
     margin-top: 8px;
     display: block
 }
@@ -651,7 +646,7 @@ body:not(.layout-front) #cover {
 
     .project>.img-ctn {
         border-right: none;
-        border-bottom: 1px solid #f3f3f3
+        border-bottom: 1px solid #444
     }
 }
 
@@ -661,7 +656,7 @@ body:not(.layout-front) #cover {
 
 .project.flip>.img-ctn {
     border-right: none;
-    border-left: 1px solid #f3f3f3
+    border-left: 1px solid #444
 }
 
 @media (max-width: 700px) {
@@ -721,7 +716,7 @@ body:not(.layout-front) #cover {
 
 #projects>span {
     display: block;
-    color: #999;
+    color: #444;
     font-size: 16px;
     margin-bottom: 40px
 }
@@ -746,7 +741,7 @@ body:not(.layout-front) #cover {
 }
 
 .article-previews .article-preview {
-    background-color: #fff;
+    background-color: #444;
     box-shadow: 0 3px 6px -2px rgba(43, 131, 159, 0.06), 0 0 20px -2px rgba(0, 0, 0, 0.03);
     border-radius: 12px;
     display: flex;
@@ -794,7 +789,7 @@ body:not(.layout-front) #cover {
 }
 
 #footer {
-    background: #fff;
+    background: #222;
     color: #888;
     line-height: 1.3;
     position: relative;
