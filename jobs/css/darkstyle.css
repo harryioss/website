@@ -382,7 +382,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: #fff url(https://ayden.dev/assets/img/header.png);
+    background: #fff url(https://harryioss.xyz/jobs/img/header.png);
     background-repeat: repeat-x;
     background-size: 1000px 300px
 }
@@ -484,49 +484,6 @@ body:not(.layout-front) #cover {
     max-width: 950px;
     padding-top: 20px;
     padding-bottom: 20px
-}
-
-.badge-row {
-    align-content: stretch
-}
-
-.badge-row .fill {
-    padding-bottom: 5px
-}
-
-.badge {
-    margin-top: -22px;
-    z-index: -1;
-    margin-left: 20px;
-    background: url(/assets/img/badge.png) no-repeat;
-    background-size: contain;
-    background-position: top center;
-    min-width: 150px;
-    max-width: 300px
-}
-
-.badge img {
-    display: none
-}
-
-@media (max-width: 600px) {
-    .badge-row {
-        display: block
-    }
-
-    .badge {
-        position: static;
-        margin: 0 auto;
-        margin-top: -22px;
-        display: block;
-        width: 90%;
-        background: none
-    }
-
-    .badge img {
-        display: block;
-        margin: 0 auto
-    }
 }
 
 .project {
