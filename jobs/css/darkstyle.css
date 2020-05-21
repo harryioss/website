@@ -226,7 +226,12 @@ h1,
 h2,
 h3,
 h4,
-h5,]
+h5,
+h5,
+h6 {
+    font-family: "Varela Round", "Open Sans", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    color: #2B839F
 }
 
 html {
